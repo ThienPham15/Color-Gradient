@@ -21,3 +21,5 @@ function bgGenerator() {
 } 
 
 form.addEventListener('change', bgGenerator);
+
+//add animation
