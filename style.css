@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    background-image: linear-gradient(to right,#df7272, #8dbc8d);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*view with gradient background look the same when scrolling*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    max-width: 350px;
+    min-height: 200px;
+    height: 100vh;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 0 5px #333;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 2rem auto 1rem;
+}
+
+
+input {
+    border: none;
+    padding: none;
+    background-color: transparent;
+}
+
+input[type="color"] {
+    margin: 0;
+    width: 10vw; 
+    height: 6vh;
+}
+
+.colors {
+    display: flex;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    background-color: #eee;
+    margin: 0.5rem;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    height: 35px;
+  }
+
+.direction span{
+    font-size: 25px;
+}
+
+.directions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+input[type='radio']:checked + label {
+    background-color: #333;
+    color: white;
+  }
